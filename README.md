@@ -17,21 +17,25 @@
 
 #### Response Status
 
-HTTP Response status (200, 500, …)
+HTTP Response status (200, 500, …) according to HTTP Specification.
 
-**Format:** http.response.status{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#04BBBF">path</span>,<span style="color:#FCB13F">zone</span>}
+> http.response.status{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#04BBBF">path</span>,<span style="color:#FCB13F">zone</span>}
 
 #### Response Time
 
-HTTP Response time in ms
+HTTP Response time in ms. Time to load the targetted resource.
 
-**Format:** http.response.time{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#04BBBF">path</span>,<span style="color:#FCB13F">zone</span>}
+> http.response.time{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#04BBBF">path</span>,<span style="color:#FCB13F">zone</span>}
 
-#### SSL Grade
+#### SSL
 
-SSL Labs grade
+SSL Labs grade.
 
-**Format:** http.ssl.grade{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#04BBBF">path</span>,<span style="color:#FCB13F">zone</span>}
+> http.ssl.grade{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#04BBBF">path</span>,<span style="color:#FCB13F">zone</span>}
+
+SSL validation until timestamp in second
+
+> http.ssl.valid.until{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#04BBBF">path</span>,<span style="color:#FCB13F">zone</span>}
 
 ### DNS
 
@@ -39,10 +43,10 @@ SSL Labs grade
 
 DNS zone
 
-**Format:** dns.zone{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#FCB13F">zone</span>}
+> dns.zone{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#FCB13F">zone</span>}
 
 #### Latency
 
 DNS time to resolve hostname
 
-**Format:** dns.lookup.latency{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#FCB13F">zone</span>}
+> dns.lookup.latency{<span style="color:#C2024F">domain</span>,<span style="color:#741b47">host</span>,<span style="color:#FCB13F">zone</span>}
