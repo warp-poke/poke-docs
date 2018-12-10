@@ -1,6 +1,6 @@
 # Poke Warp10 Data Model
 
-## Labels semantique
+## Labels semantic
 
 | Name      | Description           | Example                           | Set by    |
 |-----------|-----------------------|-----------------------------------|-----------|
